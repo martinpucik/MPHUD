@@ -26,6 +26,7 @@
 		138C21A2241549C400D5ACCC /* MPLoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C21A1241549C400D5ACCC /* MPLoadingHUD.swift */; };
 		138C21A524154CB900D5ACCC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C21A424154CB900D5ACCC /* UIViewExtension.swift */; };
 		138C21A8241552A900D5ACCC /* MPProxyPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C21A7241552A900D5ACCC /* MPProxyPropertyWrapper.swift */; };
+		13BF1D742416C875004453A6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF1D732416C875004453A6 /* UIFontExtension.swift */; };
 		OBJ_22 /* MPHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MPHUD.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* MPHUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MPHUDTests.swift */; };
@@ -56,6 +57,7 @@
 		138C21A1241549C400D5ACCC /* MPLoadingHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLoadingHUD.swift; sourceTree = "<group>"; };
 		138C21A424154CB900D5ACCC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		138C21A7241552A900D5ACCC /* MPProxyPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPProxyPropertyWrapper.swift; sourceTree = "<group>"; };
+		13BF1D732416C875004453A6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		"MPHUD::MPHUD::Product" /* MPHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MPHUD::MPHUDTests::Product" /* MPHUDTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MPHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* MPHUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPHUDTests.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				138C21A424154CB900D5ACCC /* UIViewExtension.swift */,
+				13BF1D732416C875004453A6 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				138C21A524154CB900D5ACCC /* UIViewExtension.swift in Sources */,
 				136B748724153887009F39B0 /* MPHUDWindow.swift in Sources */,
 				138C21A2241549C400D5ACCC /* MPLoadingHUD.swift in Sources */,
+				13BF1D742416C875004453A6 /* UIFontExtension.swift in Sources */,
 				OBJ_22 /* MPHUD.swift in Sources */,
 				138C21A8241552A900D5ACCC /* MPProxyPropertyWrapper.swift in Sources */,
 				136B7485241537A7009F39B0 /* MPHUDContentView.swift in Sources */,

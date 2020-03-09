@@ -18,7 +18,7 @@ final class MPHUDWindow {
         let window = UIWindow()
         window.alpha = 0
         window.isHidden = false
-        window.backgroundColor = .clear
+        window.backgroundColor = UIColor.tertiarySystemBackground.withAlphaComponent(0.5)
         return window
     }()
 
@@ -34,15 +34,15 @@ final class MPHUDWindow {
     static func show(_ hud: MPHUD) {
         shared.contentContainer.show(hud)
         UIApplication.shared.windows.first?.bringSubviewToFront(shared.window)
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.2, delay: 2, animations: {
+        UIView.animate(withDuration: 0.2) {
             shared.window.alpha = 1
-        })
+        }
     }
 
     static func hide() {
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.2, delay: 0, animations: {
+        UIView.animate(withDuration: 0.2) {
             shared.window.alpha = 0
-        })
+        }
     }
 }
 

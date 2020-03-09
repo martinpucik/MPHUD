@@ -59,7 +59,8 @@ private extension MPHUDContentView {
 
     func hudView(for hud: MPHUD) -> UIView {
         switch hud {
-            case .loading(let message): return MPLoadingHUD(message: message)
+            case .loading(let message):
+                return MPLoadingHUD(message: message)
         }
     }
 }

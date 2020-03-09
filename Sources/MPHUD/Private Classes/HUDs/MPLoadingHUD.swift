@@ -12,7 +12,6 @@ final class MPLoadingHUD: UIView {
     // MARK: - Private properties
 
     private let message: String?
-    private var hasMessage: Bool { message != nil }
 
     // MARK: - Lifecycle
 
@@ -27,13 +26,13 @@ final class MPLoadingHUD: UIView {
 
     private lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [activity])
+        if let message = message, !message.isEmpty {
+            view.addArrangedSubview(messageLabel)
+        }
         view.axis = .horizontal
         view.alignment = .fill
         view.distribution = .fill
-        view.spacing = 8
-        if hasMessage {
-            view.addArrangedSubview(messageLabel)
-        }
+        view.spacing = 12
         return view
     }()
 
@@ -45,10 +44,9 @@ final class MPLoadingHUD: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = message
-        label.font = UIFont.preferredFont(forTextStyle: .callout)
+        label.font = UIFont.preferredFont(forTextStyle: .subheadline).bold
         return label
     }()
-
 }
 
 private extension MPLoadingHUD {
@@ -58,6 +56,6 @@ private extension MPLoadingHUD {
     }
 
     func setupConstraints() {
-        stackView.pinToEdges(insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
+        stackView.pinToEdges(insets: UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18))
     }
 }
