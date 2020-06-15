@@ -11,14 +11,14 @@ public enum MPHUD {
     case loading(_ message: String?)
 
     public static func show(_ hud: MPHUD) {
-        DispatchQueue.global().async {
-            DispatchQueue.main.async {
-                MPHUDWindow.show(hud)
-            }
+        DispatchQueue.main.async {
+            MPHUDWindow.show(hud)
         }
     }
 
     public static func hide() {
-        MPHUDWindow.hide()
+        DispatchQueue.main.async {
+            MPHUDWindow.hide()
+        }
     }
 }
